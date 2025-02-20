@@ -1,0 +1,119 @@
+Camel case
+Camel case deve começar com a primeira letra minúscula e a primeira letra de cada nova palavra subsequente maiúscula:
+coisasParaFazer
+
+idadeDoAmigo
+
+valorFinal
+
+Pascal case
+Também conhecido como “upper camel case” ou “capital case”, pascal case combina palavras colocando todas com a primeira letra maiúscula:
+
+CoisasParaFazer
+
+IdadeDoAmigo
+
+ValorFinal
+
+Snake case
+Em snake case, conhecido também como “underscore case”, utilizamos underline no lugar do espaço para separar as palavras. Quando o snake case está em caixa alta, ele é chamado de “screaming snake case”:
+
+coisas_para_fazer
+
+idade_do_amigo
+
+valor_final
+
+PRIMEIRO_NOME
+
+LISTA_INICIAL
+
+Kebab case
+Kebab case utiliza o traço para combinar as palavras. Quando o kebab case está em caixa alta, ele é chamado de “screaming kebab case”:
+
+coisas-para-fazer
+
+idade-do-amigo
+
+valor-final
+
+PRIMEIRO-NOME
+
+LISTA-INICIAL
+
+
+Convenções Java
+O Java possui o Java Secure Coding Guidelines, uma documentação disponibilizada pela Oracle, baseada nos padrões de codificação apresentados no Java Language Specification. É importante ressaltar que essas convenções de código Java foram escritas em 1999 e não foram atualizadas desde então, portanto algumas informações contidas no documento podem não estar atualizadas. As convenções mais comuns são:
+
+camelCase para variáveis, atributos e métodos;
+PascalCase para classes, enum e interfaces;
+SCREAMING_SNAKE_CASE para constantes.
+    public class Pessoa{
+        public static void main(String[] args) {
+
+            String primeiroNome = "Maria";
+                int idade = 22;
+                double alturaAtual = 1.65;
+                final String MENSAGEM_PADRAO = "Olá";
+            }
+        }
+Convenções JavaScript
+camelCase para variáveis, constantes, funções e métodos;
+PascalCase para classes.
+class ClienteBanco {  
+    constructor(primeiroNome, cpf) { 
+      this.primeiroNome = primeiroNome;
+      this.cpf = cpf;
+    }
+
+  exibirPrimeiroNome(){
+     console.log(this.primeiroNome);
+    }
+}
+
+  var clienteUm = new ClienteBanco('Maria', 150);
+  var clienteDois = new ClienteBanco('João', 70);
+Convenções Python
+O Python possui um guia de estilos e estruturação que fornece convenções de codificação para o código, o PEP8. Isso não significa que seu código não funcionará se não seguir as diretrizes, no entanto, segundo o PEP 20 -- The Zen of Python, a legibilidade conta.
+
+snake_case para variáveis, funções e métodos;
+PascalCase para classes;
+SCREAMING_SNAKE_CASE para constantes.
+class Pessoa:
+    def __init__(self, nome, cpf):
+        self.nome = nome
+        self.cpf = cpf
+
+        def exibir_primeiro_nome(self):
+        print(self.nome)
+
+        pessoa_um = Pessoa('Alice', '123456789')
+Convenções GO
+Os nomes na linguagem Go tem um efeito semântico, a visibilidade de um identificador fora de um pacote é determinada se o nome inicia com letra maiúscula ou minúscula, portanto devemos nos atentar com as convenções utilizadas. O Go também possui uma documentação com ótimas dicas para escrever um código claro, o Effective Go.
+
+PascalCase para exportar (acessível fora do pacote);
+camelCase para internos (não é exportado).
+package nome
+
+type ExportedStruct {
+    unexportedField string
+}
+Convenções Ruby
+A linguagem Ruby utiliza o Ruby Style Guide, um guia de estilo que te dá boas dicas para a escrita do código.
+
+PascalCase para classes e módulos;
+snake_case para métodos, variáveis, nomear arquivos e diretórios;
+SCREAMING_SNAKE_CASE para constantes.
+class Pessoa
+
+    def initialize(primeiro_nome, cpf)    
+        @primeiro_nome = primeiro_nome
+        @cpf = cpf
+    end
+
+    def exibe_primeiro_nome
+        @primeiro_nome
+    end
+end
+
+pessoa_um = Pessoa.new('Alice', 123456789)
